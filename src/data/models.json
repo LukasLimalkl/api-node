@@ -1,3 +1,13 @@
 {
-    "modelo": "volvo fh440"
-}
+    "Modelos": [
+      "Volkswagen",
+      "Mercedes-Benz",
+      "Scania",
+      "Volvo",
+      "Ford",
+      "Iveco",
+      "MAN",
+      "DAF"
+    ]
+  }
+  
