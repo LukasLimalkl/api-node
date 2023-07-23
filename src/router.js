@@ -13,4 +13,10 @@ router.get('/data', (req, res) => {
   res.sendFile(file);
 });
 
+router.get('/data/ano', (req, res) => {
+  const file = path.join(__dirname, 'data/year.json');
+
+  res.sendFile(file);
+});
+
 module.exports = router;
