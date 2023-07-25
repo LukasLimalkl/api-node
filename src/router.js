@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 // ROTA MARCA DOS CAMINHOES
 
 router.get('/marca', (req, res) => {
-  const file = path.join(__dirname, 'data/marca/marc.json');
+  const file = path.join(__dirname, 'data/marc.json');
 
   res.sendFile(file);
 });
