@@ -1,6 +1,10 @@
 {
   "models": [
     {
+      "id": 0,
+      "nome":"Modelo"
+    },
+    {
       "id": 1,
       "nome": "Volvo"
     },
