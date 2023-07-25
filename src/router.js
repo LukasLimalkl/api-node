@@ -17,7 +17,7 @@ router.get('/marca', (req, res) => {
 
 // ROTA DO ANO DOS CAMINHOES
 
-router.get('/data/ano', (req, res) => {
+router.get('/yeartruck', (req, res) => {
   const file = path.join(__dirname, 'data/year.json');
 
   res.sendFile(file);
