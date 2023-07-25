@@ -6,27 +6,27 @@
     },
     {
       "id": 1,
-      "nome": "Volvo"
+      "nome": "volvo"
     },
     {
       "id": 2,
-      "nome": "Mercedes-Benz"
+      "nome": "mercedes"
     },
     {
       "id": 3,
-      "nome": "Scania"
+      "nome": "scania"
     },
     {
       "id": 4,
-      "nome": "MAN"
+      "nome": "man"
     },
     {
       "id": 5,
-      "nome": "Iveco"
+      "nome": "iveco"
     },
     {
       "id": 6,
-      "nome": "DAF"
+      "nome": "daf"
     }
   ]
 }
