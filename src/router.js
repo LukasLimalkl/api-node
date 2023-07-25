@@ -25,6 +25,18 @@ router.get('/yeartruck', (req, res) => {
 
 // ROTAS DOS MODELOS
 
+router.get('/models/marca', (req, res) => {
+  const file = path.join(__dirname, 'data/models/marca.json');
+
+  res.sendFile(file);
+});
+
+router.get('/models/volvo', (req, res) => {
+  const file = path.join(__dirname, 'data/models/volvo-models.json');
+
+  res.sendFile(file);
+});
+
 router.get('/models/volvo', (req, res) => {
   const file = path.join(__dirname, 'data/models/volvo-models.json');
 
