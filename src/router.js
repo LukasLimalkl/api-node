@@ -26,49 +26,49 @@ router.get('/yeartruck', (req, res) => {
 // ROTAS DOS MODELOS
 
 router.get('/models/marca', (req, res) => {
-  const file = path.join(__dirname, 'data/models/marca.json');
+  const file = path.join(__dirname, 'data/modelsTruck/marca.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/volvo', (req, res) => {
-  const file = path.join(__dirname, 'data/models/volvo-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/volvo-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/volvo', (req, res) => {
-  const file = path.join(__dirname, 'data/models/volvo-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/volvo-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/scania', (req, res) => {
-  const file = path.join(__dirname, 'data/models/scania-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/scania-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/man', (req, res) => {
-  const file = path.join(__dirname, 'data/models/man-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/man-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/daf', (req, res) => {
-  const file = path.join(__dirname, 'data/models/daf-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/daf-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/iveco', (req, res) => {
-  const file = path.join(__dirname, 'data/models/iveco-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/iveco-models.json');
 
   res.sendFile(file);
 });
 
 router.get('/models/mercedes', (req, res) => {
-  const file = path.join(__dirname, 'data/models/mercedes-models.json');
+  const file = path.join(__dirname, 'data/modelsTruck/mercedes-models.json');
 
   res.sendFile(file);
 });
