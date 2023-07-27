@@ -1,5 +1,5 @@
-const path = require('path');
 const express = require('express');
+const trucksControllers = require('./Controllers/MediaController');
 
 const router = express();
 
@@ -9,68 +9,30 @@ router.get('/', (req, res) => {
 
 // ROTA MARCA DOS CAMINHOES
 
-router.get('/marca', (req, res) => {
-  const file = path.join(__dirname, 'data/marca.json');
+router.get('/marca', trucksControllers.marcaTrucks);
 
-  res.sendFile(file);
-});
+// MEDIA DOS CAMINHOES
+
+router.get('/media', trucksControllers.mediaTrucks);
 
 // ROTA DO ANO DOS CAMINHOES
 
-router.get('/yeartruck', (req, res) => {
-  const file = path.join(__dirname, 'data/year.json');
-
-  res.sendFile(file);
-});
+router.get('/yeartruck', trucksControllers.yearTrucks);
 
 // ROTAS DOS MODELOS
 
-router.get('/models/marca', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/marca.json');
+router.get('/models/marca', trucksControllers.marcaMolelTruck);
 
-  res.sendFile(file);
-});
+router.get('/models/volvo', trucksControllers.volvoTruck);
 
-router.get('/models/volvo', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/volvo-models.json');
+router.get('/models/scania', trucksControllers.scaniaTruck);
 
-  res.sendFile(file);
-});
+router.get('/models/man', trucksControllers.manTruck);
 
-router.get('/models/volvo', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/volvo-models.json');
+router.get('/models/daf', trucksControllers.dafTruck);
 
-  res.sendFile(file);
-});
+router.get('/models/iveco', trucksControllers.ivecoTruck);
 
-router.get('/models/scania', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/scania-models.json');
-
-  res.sendFile(file);
-});
-
-router.get('/models/man', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/man-models.json');
-
-  res.sendFile(file);
-});
-
-router.get('/models/daf', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/daf-models.json');
-
-  res.sendFile(file);
-});
-
-router.get('/models/iveco', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/iveco-models.json');
-
-  res.sendFile(file);
-});
-
-router.get('/models/mercedes', (req, res) => {
-  const file = path.join(__dirname, 'data/modelsTruck/mercedes-models.json');
-
-  res.sendFile(file);
-});
+router.get('/models/mercedes', trucksControllers.mercedesTruck);
 
 module.exports = router;
