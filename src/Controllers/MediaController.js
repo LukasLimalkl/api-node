@@ -1,6 +1,7 @@
 const path = require('path');
 
 // MARCA DOS CAMINHOES
+
 const marcaTrucks = (req, res) => {
   const file = path.join(__dirname, '../data/marca.json');
 
@@ -8,11 +9,13 @@ const marcaTrucks = (req, res) => {
 };
 
 // MEDIA DOS CAMNHOES
+
 const mediaTrucks = (req, res) => {
   res.status(200);
 };
 
 // ANO DOS CAMINHOES
+
 const yearTrucks = (req, res) => {
   const file = path.join(__dirname, '../data/year.json');
 
@@ -20,6 +23,7 @@ const yearTrucks = (req, res) => {
 };
 
 // MODELO DOS CAMINHOES
+
 const marcaMolelTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/marca.json');
 
