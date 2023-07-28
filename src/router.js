@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 
 // ROTA MARCA DOS CAMINHOES
 
-router.get('/marca', trucksControllers.marcaTrucks);
+router.get('/marcatruck', trucksControllers.marcaTrucks);
 
 // MEDIA DOS CAMINHOES
 
