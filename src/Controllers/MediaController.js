@@ -2,7 +2,7 @@ const path = require('path');
 
 // MARCA DOS CAMINHOES
 const marcaTrucks = (req, res) => {
-  const file = path.join(__dirname, 'data/marca.json');
+  const file = path.join(__dirname, '../data/marca.json');
 
   res.sendFile(file);
 };
