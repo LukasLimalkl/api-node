@@ -2,8 +2,8 @@ const path = require('path');
 
 // MARCA DOS CAMINHOES
 
-const marcaTrucks = (req, res) => {
-  const file = path.join(__dirname, '../data/marca.json');
+const marcaTrucks = async (req, res) => {
+  const file = await path.join(__dirname, '../data/marca.json');
 
   res.sendFile(file);
 };
@@ -11,7 +11,9 @@ const marcaTrucks = (req, res) => {
 // MEDIA DOS CAMNHOES
 
 const mediaTrucks = (req, res) => {
-  res.status(200);
+  res.status(200).json({
+    message: 'ok',
+  });
 };
 
 // ANO DOS CAMINHOES
@@ -24,43 +26,58 @@ const yearTrucks = (req, res) => {
 
 // MODELO DOS CAMINHOES
 
-const marcaMolelTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/marca.json');
+const marcaMolelTruck = async (req, res) => {
+  const file = await path.join(__dirname, '../data/modelsTruck/marca.json');
 
   res.sendFile(file);
 };
 
-const volvoTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/volvo-models.json');
+const volvoTruck = async (req, res) => {
+  const file = await path.join(
+    __dirname,
+    '../data/modelsTruck/volvo-models.json'
+  );
 
   res.sendFile(file);
 };
 
-const scaniaTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/scania-models.json');
+const scaniaTruck = async (req, res) => {
+  const file = await path.join(
+    __dirname,
+    '../data/modelsTruck/scania-models.json'
+  );
 
   res.sendFile(file);
 };
 
-const ivecoTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/iveco-models.json');
+const ivecoTruck = async (req, res) => {
+  const file = await path.join(
+    __dirname,
+    '../data/modelsTruck/iveco-models.json'
+  );
 
   res.sendFile(file);
 };
 
-const mercedesTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/mercedes-models.json');
+const mercedesTruck = async (req, res) => {
+  const file = await path.join(
+    __dirname,
+    '../data/modelsTruck/mercedes-models.json'
+  );
 
   res.sendFile(file);
 };
 
-const manTruck = (req, res) => {
-  const file = path.join(__dirname, '../data/modelsTruck/man-models.json');
+const manTruck = async (req, res) => {
+  const file = await path.join(
+    __dirname,
+    '../data/modelsTruck/man-models.json'
+  );
 
   res.sendFile(file);
 };
 
-const dafTruck = (req, res) => {
+const dafTruck = async (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/daf-models.json');
 
   res.sendFile(file);
