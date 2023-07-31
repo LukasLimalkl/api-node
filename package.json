@@ -1,5 +1,6 @@
 {
   "name": "api-node",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/server": "^4.9.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "graphql": "^16.7.1",
     "nodemon": "^3.0.1"
   },
   "devDependencies": {
