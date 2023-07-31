@@ -4,7 +4,7 @@ const trucksControllers = require('./Controllers/TruckController');
 const router = express();
 
 router.get('/', (req, res) => {
-  res.send('Use /marca');
+  res.send('Use /marcatruck');
 });
 
 // ROTA MARCA DOS CAMINHOES
