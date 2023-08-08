@@ -15,10 +15,10 @@ const mediaTrucks = async (req, res) => {
   try {
     await sequelize.sync();
 
-    return res.status(201).json({ message: 'Tabela criada com sucesso!' });
+    return res.status(201).json({ message: 'Dados enviados com sucesso!' });
   } catch (error) {
     console.error('Erro ao criar tabela:', error);
-    return res.status(500).json({ message: 'Erro ao criar tabela' });
+    return res.status(500).json({ message: 'Erro ao enviar dados!' });
   }
 };
 
