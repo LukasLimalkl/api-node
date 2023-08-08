@@ -35,4 +35,6 @@ router.get('/models/iveco', trucksControllers.ivecoTruck);
 
 router.get('/models/mercedes', trucksControllers.mercedesTruck);
 
+router.post('/create-table', trucksControllers.mediaTrucks);
+
 module.exports = router;

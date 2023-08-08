@@ -1,4 +1,5 @@
 const path = require('path');
+const { sequelize } = require('../Models/index');
 
 // MARCA DOS CAMINHOES
 
@@ -10,10 +11,15 @@ const marcaTrucks = (req, res) => {
 
 // MEDIA DOS CAMNHOES
 
-const mediaTrucks = (req, res) => {
-  res.status(200).json({
-    message: 'ok',
-  });
+const mediaTrucks = async (req, res) => {
+  try {
+    await sequelize.sync();
+
+    return res.status(201).json({ message: 'Tabela criada com sucesso!' });
+  } catch (error) {
+    console.error('Erro ao criar tabela:', error);
+    return res.status(500).json({ message: 'Erro ao criar tabela' });
+  }
 };
 
 // ANO DOS CAMINHOES
