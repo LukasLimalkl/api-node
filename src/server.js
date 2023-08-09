@@ -1,9 +1,11 @@
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = require('./app');
 const sequelize = require('./sequelize');
 
 const PORT = 3333;
 
+app.use(bodyParser.json());
 app.use(cors());
 
 app.listen(PORT, () => {

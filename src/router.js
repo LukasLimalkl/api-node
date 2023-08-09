@@ -13,7 +13,7 @@ router.get('/marcatruck', trucksControllers.marcaTrucks);
 
 // MEDIA DOS CAMINHOES
 
-router.get('/media', trucksControllers.mediaTrucks);
+router.post('/media', trucksControllers.mediaTrucks);
 
 // ROTA DO ANO DOS CAMINHOES
 
@@ -34,7 +34,5 @@ router.get('/models/daf', trucksControllers.dafTruck);
 router.get('/models/iveco', trucksControllers.ivecoTruck);
 
 router.get('/models/mercedes', trucksControllers.mercedesTruck);
-
-router.post('/create-table', trucksControllers.mediaTrucks);
 
 module.exports = router;
