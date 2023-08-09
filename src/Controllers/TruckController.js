@@ -1,5 +1,5 @@
 const path = require('path');
-const { sequelize } = require('../Models/index');
+const { sequelize, caminhao } = require('../Models/index');
 
 // MARCA DOS CAMINHOES
 
@@ -14,6 +14,15 @@ const marcaTrucks = (req, res) => {
 const mediaTrucks = async (req, res) => {
   try {
     await sequelize.sync();
+
+    const { truck, model, ano, media } = req.body;
+
+    caminhao.create({
+      truck,
+      model,
+      ano,
+      media,
+    });
 
     return res.status(201).json({ message: 'Dados enviados com sucesso!' });
   } catch (error) {

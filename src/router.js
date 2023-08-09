@@ -1,5 +1,9 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const trucksControllers = require('./Controllers/TruckController');
+
+const jsonParse = bodyParser.json();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const router = express();
 
@@ -13,7 +17,12 @@ router.get('/marcatruck', trucksControllers.marcaTrucks);
 
 // MEDIA DOS CAMINHOES
 
-router.post('/media', trucksControllers.mediaTrucks);
+router.post(
+  '/media',
+  jsonParse,
+  urlencodedParser,
+  trucksControllers.mediaTrucks
+);
 
 // ROTA DO ANO DOS CAMINHOES
 

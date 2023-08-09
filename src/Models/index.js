@@ -3,17 +3,10 @@ const sequelize = require('../sequelize');
 
 const Truck = require('./TruckModels');
 
-const truck = Truck(sequelize, Sequelize.DataTypes);
-
-truck.create({
-  truck: 'Volvo',
-  model: 'FH16',
-  ano: '2022',
-  media: '8.9',
-});
+const caminhao = Truck(sequelize, Sequelize.DataTypes);
 
 const db = {
-  truck,
+  caminhao,
   sequelize,
 };
 
