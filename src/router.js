@@ -30,53 +30,18 @@ router.get('/yeartruck', trucksControllers.yearTrucks);
 
 // ROTAS DOS MODELOS
 
-router.get(
-  '/models/marca',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.marcaMolelTruck
-);
+router.get('/models/marca', trucksControllers.marcaMolelTruck);
 
-router.get(
-  '/models/volvo',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.volvoTruck
-);
+router.get('/models/volvo', trucksControllers.volvoTruck);
 
-router.get(
-  '/models/scania',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.scaniaTruck
-);
+router.get('/models/scania', trucksControllers.scaniaTruck);
 
-router.get(
-  '/models/man',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.manTruck
-);
+router.get('/models/man', trucksControllers.manTruck);
 
-router.get(
-  '/models/daf',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.dafTruck
-);
+router.get('/models/daf', trucksControllers.dafTruck);
 
-router.get(
-  '/models/iveco',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.ivecoTruck
-);
+router.get('/models/iveco', trucksControllers.ivecoTruck);
 
-router.get(
-  '/models/mercedes',
-  jsonParse,
-  urlencodedParser,
-  trucksControllers.mercedesTruck
-);
+router.get('/models/mercedes', trucksControllers.mercedesTruck);
 
 module.exports = router;
