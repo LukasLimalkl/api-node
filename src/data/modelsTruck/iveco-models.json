@@ -1,10 +1,6 @@
 {
     "models": [
       {
-        "id": 0,
-        "nome":"Escolha o modelo"
-      },
-      {
         "id": 1,
         "nome": "S-WAY 480"
       },

@@ -1,10 +1,6 @@
 {
   "marca": [
     {
-      "id": 0,
-      "nome": "Marca"
-    },
-    {
       "id": 1,
       "nome": "Volvo"
     },
