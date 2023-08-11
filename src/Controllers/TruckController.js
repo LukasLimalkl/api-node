@@ -4,10 +4,9 @@ const { sequelize, caminhao } = require('../Models/index');
 // MARCA DOS CAMINHOES
 
 const marcaTrucks = (req, res) => {
-  const json = path.join(__dirname, '../data/marca.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/marca.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 // MEDIA DOS CAMNHOES
@@ -35,61 +34,53 @@ const mediaTrucks = async (req, res) => {
 // ANO DOS CAMINHOES
 
 const yearTrucks = (req, res) => {
-  const json = path.join(__dirname, '../data/year.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/year.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 // MODELO DOS CAMINHOES
 
 const marcaMolelTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/marca.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/marca.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const volvoTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/volvo-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/volvo-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const scaniaTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/scania-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/scania-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const ivecoTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/iveco-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/iveco-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const mercedesTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/mercedes-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/mercedes-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const manTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/man-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/man-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 const dafTruck = (req, res) => {
-  const json = path.join(__dirname, '../data/modelsTruck/daf-models.json');
-  const file = JSON.parse(json);
+  const file = path.join(__dirname, '../data/modelsTruck/daf-models.json');
 
-  res.sendFile(file);
+  res.json(file);
 };
 
 module.exports = {
