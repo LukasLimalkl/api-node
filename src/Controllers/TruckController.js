@@ -1,12 +1,23 @@
 const path = require('path');
+const fs = require('fs');
 const { sequelize, caminhao } = require('../Models/index');
 
 // MARCA DOS CAMINHOES
+/*eslint-disable*/
 
 const marcaTrucks = (req, res) => {
   const file = path.join(__dirname, '../data/marca.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
+
 };
 
 // MEDIA DOS CAMNHOES
@@ -36,7 +47,16 @@ const mediaTrucks = async (req, res) => {
 const yearTrucks = (req, res) => {
   const file = path.join(__dirname, '../data/year.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
+
 };
 
 // MODELO DOS CAMINHOES
@@ -44,43 +64,99 @@ const yearTrucks = (req, res) => {
 const marcaMolelTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/marca.json');
 
-  res.json(file);
+   fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const volvoTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/volvo-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const scaniaTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/scania-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const ivecoTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/iveco-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const mercedesTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/mercedes-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const manTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/man-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 const dafTruck = (req, res) => {
   const file = path.join(__dirname, '../data/modelsTruck/daf-models.json');
 
-  res.json(file);
+  fs.readFile(file, 'utf8', (err, data) => {
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData);
+    } catch (parseError) {
+      console.error('Erro ao fazer parse do JSON:', parseError);
+      return res.status(500).json({ message: 'Erro ao fazer parse do JSON' });
+    }
+  });
 };
 
 module.exports = {
