@@ -2,13 +2,7 @@ const truck = (sequelize, DataTypes) => {
   const Truck = sequelize.define(
     'Truck',
     {
-      truck: {
-        type: DataTypes.STRING,
-      },
-      model: {
-        type: DataTypes.STRING,
-      },
-      ano: {
+      placa: {
         type: DataTypes.STRING,
       },
       media: {

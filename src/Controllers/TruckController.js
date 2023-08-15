@@ -4,12 +4,10 @@ const mediaTrucks = async (req, res) => {
   try {
     await sequelize.sync();
 
-    const { truck, model, ano, media } = req.body;
+    const { placa, media } = req.body;
 
     caminhao.create({
-      truck,
-      model,
-      ano,
+      placa,
       media,
     });
 
