@@ -10,7 +10,7 @@ const truck = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: 'MediaTrucks',
+      tableName: 'PlatesTruck',
     }
   );
   return Truck;
